@@ -1,6 +1,6 @@
 """
 add names
-Author: Stockton Nelson
+Author: Stockton Nelson, Troy Justesen
 
 files: sn_falling_object.py
 """
