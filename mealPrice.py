@@ -17,9 +17,10 @@ salesTax = (subtotal * (taxRate/100))
 total = (subtotal + salesTax + tip)
 print(f"Subtotal: ${subtotal:.2f}")
 print(f"Sales Tax:  ${salesTax:.2f}")
-print(f"Tip: {tip:P.2f}")
+print(f"Tip: ${tip:.2f}")
 print(f"Total: ${total:.2f}")
 # Payment
+
 money = float(input("Money Given: $"))
 change = (money - total)
 print(f"Your change is ${change:.2f}")
