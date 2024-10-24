@@ -1,7 +1,7 @@
 
 """
 Main Author: Stockton Nelson
-CoWitters: Christopher Savage,
+CoWritters: Christopher Savage, Troy Justesen
 
 file: 
 """
@@ -25,26 +25,26 @@ Strech Rules:
 """
 
 first_rider_age = int(input("What is the age of the first rider? "))
-first_rider_hight = int(input("What is the height of the first rider? "))
+first_rider_height = int(input("What is the height of the first rider? "))
 fastpass = input("Does the rider have a fast pass? (Yes/No)? ").lower()
 extra_rider = input("Is there a second rider (yes/no)? ").lower()
-#we only need to check yes becaseu why check no?
+#we only need to check yes because why check no?
 if extra_rider == 'yes':
-    second_rider_age = int(input("What is the age of the first rider? "))
-    second_rider_hight = int(input("What is the height of the first rider? "))
+    second_rider_age = int(input("What is the age of the second rider? "))
+    second_rider_height = int(input("What is the height of the second rider? "))
 
 
 #rider checker
 if extra_rider == 'yes':
 
-    if (((first_rider_age or second_rider_age >= 18) or ((first_rider_age and second_rider_age >= 12) or fastpass == 'yes') or (((first_rider_age >= 16 or second_rider_age >= 16) and (first_rider_age >= 14 or second_rider_age >= 14))) and (first_rider_hight or second_rider_hight >= 62) and (first_rider_hight and second_rider_hight >=  36))):
+    if (((first_rider_age or second_rider_age >= 18) or ((first_rider_age and second_rider_age >= 12) or fastpass == 'yes') or (((first_rider_age >= 16 or second_rider_age >= 16) and (first_rider_age >= 14 or second_rider_age >= 14))) and (first_rider_height or second_rider_height >= 62) and (first_rider_height and second_rider_height >= 36))):
         can_ride = True
 
     else: 
         can_ride = False
 
 else:
-    if ((first_rider_age >= 18) or (first_rider_age >= 12 and fastpass == 'yes' )) and first_rider_hight >= 62:
+    if ((first_rider_age >= 18) or (first_rider_age >= 12 and fastpass == 'yes')) and first_rider_height >= 62:
         can_ride = True
 
     else: 
