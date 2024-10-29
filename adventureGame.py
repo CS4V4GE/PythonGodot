@@ -53,7 +53,7 @@ def adventure_game():
             print("You head east and encounter a dense thicket.")
             next_choice_2 = input("Do you want to CUT through the thicket or GO around? ").strip().lower()
             if next_choice_2 == "cut":
-                print("You cut through the thicket and find a hidden pathway. You win!")
+                print('You start cutting. The thicket never ends, you chop until your hands bleed and night falls.\n The bear comes for you. He stands on his hind legs."You got any honey?" He then procceeds to maul you. You lose.  ')
             elif next_choice_2 == "go":
                 print("You go around the thicket and find an ancient ruin. You win!")
             else:
