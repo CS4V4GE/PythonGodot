@@ -1,6 +1,6 @@
 """
 Main Author: Stockton Nelson
-cowitter: Jackson Kelley 
+cowitter: Jackson Kelley, Troy Justesen
 
 file: number_list.py
 """
