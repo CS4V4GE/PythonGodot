@@ -1,6 +1,6 @@
 """
 Main Author: Stockton Nelson
-[Co-witter goes here]
+Co-witters: Troy Justesen
 
 file: HR_system
 """
