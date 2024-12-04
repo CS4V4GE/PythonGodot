@@ -25,7 +25,7 @@ with open('books_and_chapters.txt') as file:
     
 
 
-for scripture in scriptures:
+for scripture in book_of_mormon_chapters:
     if int(scripture[1]) >=  int(largest_number_of_chapters[1]):
         largest_number_of_chapters = scripture
     
@@ -35,7 +35,7 @@ for scripture in scriptures:
     
     print(f'Scripture: {scripture[0]}, Book: {scripture[2]}, Chapters: {scripture[1]}')
 
-print(f"The book with the most chapters is: {largest_number_of_chapters[0]}")
+print(f"The book of mormon with the most chapters is: {largest_number_of_chapters[0]}")
 print(f"It has {largest_number_of_chapters[1]} chapters.")
 
 print(f"The {user_input_voulume} with the most chapters is: {user_voulume_name}")
