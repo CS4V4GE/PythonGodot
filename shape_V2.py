@@ -15,14 +15,14 @@ def compute_area_rectangle(width, length):
 def compute_area_circle(radius):
     return (radius**2)*math.pi
 
-def compute_area(shape, one_input, two_inputs):
+def compute_area(shape, one_input, two_inputs=0):
     area = 0
-    if shape == 'square'
-        area = comput_area_square(one_input)
-    elif shape == 'circle'
-        compute_area_circle(one_input)
-    elif shape == 'rectangle'
-        compute_area_rectangle(one_input, two_inputs)
+    if shape == 'square':
+        area = compute_area_square(one_input)
+    elif shape == 'circle':
+        area = compute_area_circle(one_input)
+    elif shape == 'rectangle':
+        area = compute_area_rectangle(one_input, two_inputs)
     return area
 
 user_input = ''
@@ -32,16 +32,19 @@ while True:
 
     if user_input == 'square':
         side = float(input('What is the side length?: '))
-        print(compute_area(shape, side))
+        area = compute_area(user_input, side)
+        print(f'The area is: {area:.2f}')
 
     elif user_input == 'rectangle':
         width = float(input('What is the width?: '))
         length = float(input('What is the length?: '))
-        print(compute_area(shape, width, length))
+        area = compute_area(user_input, width, length)
+        print(f'The area is: {area:.2f}')
 
     elif user_input == 'circle':
         radius = float(input('What is the radius?: '))
-        print(compute_area(shape, radius))
+        area = compute_area(user_input, radius)
+        print(f'The area is: {area:.2f}')
         
     elif user_input == 'quit':
         break
